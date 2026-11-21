@@ -2,6 +2,8 @@
 
 One command turns a folder of raw weekly exports into a finished Excel report and an HTML dashboard, and refuses to publish anything if the data is bad.
 
+![One week of raw export files and the KPI table built from them, plus the refusal message for a week with duplicated rows](docs/preview.png)
+
 ## Measured result
 
 From [BENCHMARK.md](BENCHMARK.md), which the benchmark script writes from a real run on seeded synthetic data:
