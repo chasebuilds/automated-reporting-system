@@ -1,0 +1,23 @@
+From: reports@fernhollow.example
+To: owner@fernhollow.example
+Subject: Fernhollow Supply Co.: NO weekly report for 21 Sep to 27 Sep 2026
+Date: Mon, 28 Sep 2026 08:00:00 +0000
+Message-ID: <b7a5a9270a82f7b8a66b98be@fernhollow.example>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Fernhollow Supply Co.: no weekly report for 21 Sep to 27 Sep 2026.
+
+The report was not produced because the input data failed these checks:
+
+  - orders_2026-09-21.csv: column 'amount' adds up to 65,677.91, source syste=
+m says 63,611.14 (difference +2,066.77)
+  - orders_2026-09-21.csv: file has 1,278 rows, source system says 1,238 (dif=
+ference +40)
+  - orders_2026-09-21.csv: 40 order_id values appear more than once (40 extra=
+ rows; first: FH-108377)
+
+Nothing was published. Replace or correct the files named above in the inbox =
+and
+run the report again. Earlier reports are unchanged.

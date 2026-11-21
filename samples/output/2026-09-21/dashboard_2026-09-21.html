@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernhollow Supply Co. weekly report, 21 Sep to 27 Sep 2026</title>
+<style>
+:root{color-scheme:light;--ink:#1d2330;--muted:#5a6272;--faint:#8a90a0;--glass:rgba(255,255,255,.56);
+--card:rgba(255,255,255,.62);--edge:rgba(255,255,255,.75);--rule:rgba(29,35,48,.12);
+--series:#2a78d6;--series-soft:rgba(42,120,214,.14);--track:rgba(29,35,48,.07);
+--good:#17754a;--bad:#b93a2c;--warn:#96610c;--good-bg:rgba(23,117,74,.12);--bad-bg:rgba(185,58,44,.12);
+--warn-bg:rgba(183,121,31,.16);--flat-bg:rgba(29,35,48,.07);--solid:#1d2330;--on-solid:#fff;
+--room:radial-gradient(60rem 36rem at 8% -6%,#ffd9b8 0,transparent 60%),
+radial-gradient(48rem 34rem at 96% 4%,#f6b7a1 0,transparent 58%),
+radial-gradient(54rem 40rem at 70% 104%,#c9d8f2 0,transparent 60%),
+radial-gradient(40rem 30rem at 0 100%,#f3e3c2 0,transparent 60%),linear-gradient(160deg,#f6ead9,#efe2d2)}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--ink:#f1efea;--muted:#c2c0b6;
+--faint:#8f8d85;--glass:rgba(28,26,25,.58);--card:rgba(44,41,39,.6);--edge:rgba(255,255,255,.13);
+--rule:rgba(255,255,255,.13);--series:#3987e5;--series-soft:rgba(57,135,229,.2);
+--track:rgba(255,255,255,.09);--good:#55c890;--bad:#f0857a;--warn:#e6b455;
+--good-bg:rgba(85,200,144,.15);--bad-bg:rgba(240,133,122,.16);--warn-bg:rgba(230,180,85,.16);
+--flat-bg:rgba(255,255,255,.09);--solid:#f1efea;--on-solid:#1d1b1a;
+--room:radial-gradient(60rem 36rem at 8% -6%,#5a3a26 0,transparent 60%),
+radial-gradient(48rem 34rem at 96% 4%,#5b2f2a 0,transparent 58%),
+radial-gradient(54rem 40rem at 70% 104%,#22324f 0,transparent 60%),linear-gradient(160deg,#1b1817,#141211)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+body{margin:0;min-height:100vh;color:var(--ink);background:var(--room) fixed;background-color:#efe2d2;
+font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+-webkit-font-smoothing:antialiased}
+@media (prefers-color-scheme:dark){body{background-color:#141211}}
+.num,td.n,th.n,.tile b{font-variant-numeric:tabular-nums}
+.glass{background:var(--glass);border:1px solid var(--edge);border-radius:24px;
+-webkit-backdrop-filter:blur(26px) saturate(150%);backdrop-filter:blur(26px) saturate(150%);
+box-shadow:inset 0 1px 0 var(--edge),0 18px 44px -22px rgba(40,24,10,.45)}
+.wrap{max-width:1120px;margin:0 auto;padding:16px 16px 56px}
+.bar{position:sticky;top:12px;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;
+padding:10px 12px 10px 20px;border-radius:999px;margin-bottom:20px}
+.brand{font-weight:700;letter-spacing:-.01em}.brand span{color:var(--muted);font-weight:500}
+nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;max-width:100%}
+nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;padding:7px 14px;
+border-radius:999px;white-space:nowrap}
+nav a:hover,nav a:focus-visible{background:var(--solid);color:var(--on-solid);outline:none}
+section{padding:24px;margin-bottom:20px}
+h1{font-size:clamp(24px,4.6vw,36px);line-height:1.15;letter-spacing:-.025em;margin:2px 0 6px;
+text-wrap:balance}
+h2{font-size:20px;letter-spacing:-.015em;margin:0 0 4px}
+h3{font-size:14px;font-weight:650;margin:0 0 2px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.lede,.sub{color:var(--muted);margin:0 0 16px}.sub a{color:inherit}.sub{font-size:13px;margin:0 0 12px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;padding:6px 12px;
+border-radius:999px}
+.pill.good{background:var(--good-bg);color:var(--good)}.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.tile,.card{background:var(--card);border:1px solid var(--edge);border-radius:18px;padding:16px;
+min-width:0}
+.tile .k{font-size:13px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between;
+gap:8px}
+.tile b{display:block;font-size:clamp(22px,2.6vw,28px);line-height:1.2;letter-spacing:-.02em;
+margin:4px 0 8px;font-weight:700}
+.flag{font-size:11px;font-weight:700;color:var(--warn);background:var(--warn-bg);border-radius:999px;
+padding:1px 8px;white-space:nowrap}
+.chip{display:inline-block;font-size:12.5px;font-weight:650;padding:2px 9px;border-radius:999px}
+.chip.good{background:var(--good-bg);color:var(--good)}.chip.bad{background:var(--bad-bg);color:var(--bad)}
+.chip.flat{background:var(--flat-bg);color:var(--muted)}
+.tile small{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:12px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{fill:var(--muted);font-size:13px;font-family:inherit}
+svg .val{fill:var(--ink);font-weight:650}
+.gridline{stroke:var(--rule);stroke-width:1}.line{fill:none;stroke:var(--series);stroke-width:2.5;
+stroke-linejoin:round;stroke-linecap:round}.area{fill:var(--series-soft)}
+.dot{fill:var(--series);stroke:var(--card);stroke-width:2}.col{fill:var(--series)}
+.hit{fill:transparent;cursor:default}.hit:hover+.col,.hit:hover+.dot{filter:brightness(1.15)}
+.bars{display:grid;gap:10px;margin-top:10px}
+.brow{display:grid;grid-template-columns:minmax(84px,26%) 1fr auto;align-items:center;gap:10px;
+font-size:13.5px}
+.brow .t{position:relative;height:14px;background:var(--track);border-radius:4px}
+.brow .f{position:absolute;inset:0 auto 0 0;background:var(--series);border-radius:0 4px 4px 0;
+min-width:2px}
+.brow .m{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink);border-radius:1px}
+.brow .v{font-weight:650;min-width:4.5em;text-align:right}
+.brow .l{color:var(--muted);overflow-wrap:anywhere}
+.legend{font-size:12.5px;color:var(--muted);margin-top:10px;display:flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:2px;height:14px;background:var(--ink);border-radius:1px}
+.scroll{overflow-x:auto;border-radius:14px;border:1px solid var(--edge);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:440px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:700;
+white-space:nowrap}
+td.n,th.n{text-align:right;white-space:nowrap}tr:last-child td{border-bottom:0}
+tr.total td{font-weight:700;border-top:2px solid var(--rule)}
+code{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);overflow-wrap:anywhere}
+.lvl{font-size:11.5px;font-weight:800;letter-spacing:.05em;padding:2px 8px;border-radius:6px}
+.lvl.warn{background:var(--warn-bg);color:var(--warn)}.lvl.info{background:var(--flat-bg);color:var(--muted)}
+.lvl.pass{background:var(--good-bg);color:var(--good)}
+ul.alerts{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:6px}
+ul.alerts li{background:var(--warn-bg);color:var(--warn);font-weight:600;font-size:14px;
+padding:9px 14px;border-radius:12px}
+footer{color:var(--muted);font-size:12.5px;text-align:center;padding:4px 16px}
+#tip{position:fixed;z-index:9;pointer-events:none;background:var(--solid);color:var(--on-solid);
+font-size:12.5px;font-weight:600;padding:6px 10px;border-radius:9px;opacity:0;transition:opacity .12s;
+max-width:240px;white-space:pre-line;transform:translate(-50%,-100%)}
+@media (max-width:860px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid2{grid-template-columns:1fr}section{padding:18px 14px;border-radius:20px}
+.bar{border-radius:22px;padding:12px 12px 8px 16px}nav{margin-left:0}}
+@media (max-width:560px){svg text{font-size:19px}}
+@media (max-width:380px){.tile{padding:12px}.tile b{font-size:20px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#tip{transition:none}}
+@media print{body{background:#fff;color:#000}.bar{position:static}nav,#tip{display:none}
+.glass,.tile,.card,.scroll{background:#fff;box-shadow:none;-webkit-backdrop-filter:none;
+backdrop-filter:none;border-color:#ccc}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="bar glass">
+<div class="brand">Fernhollow Supply Co. <span>Weekly report</span></div>
+<nav aria-label="Sections"><a href="#overview">Overview</a><a href="#channels">Channels</a>
+<a href="#support">Refunds and support</a><a href="#quality">Data quality</a></nav>
+</header>
+<main>
+<section id="overview" class="glass">
+<div class="eyebrow">Week of</div>
+<h1>21 Sep to 27 Sep 2026</h1>
+<p class="sub">Data through 2026-09-27, built from 5 files
+ (1,506 rows). <a href="#quality">File names and hashes</a></p>
+<div class="pills"><span class="pill good">✓ All data checks passed</span><span class="pill warn">▲ 1 KPI outside its threshold</span></div>
+<ul class="alerts"><li>Refund rate 7.0% is above the 6.0% limit</li></ul>
+<div class="tiles"><div class="tile"><div class="k"><span>Revenue</span></div><b>$63,611</b><span class="chip bad">▼ -0.9% vs last week</span><small>+1.9% vs 4-week average</small></div><div class="tile"><div class="k"><span>Orders</span></div><b>1,238</b><span class="chip bad">▼ -0.8% vs last week</span><small>+2.9% vs 4-week average</small></div><div class="tile"><div class="k"><span>Average order value</span></div><b>$51.38</b><span class="chip bad">▼ -0.1% vs last week</span><small>-1.0% vs 4-week average</small></div><div class="tile"><div class="k"><span>Refund rate</span><span class="flag">Check</span></div><b>7.0%</b><span class="chip bad">▲ +105.3% vs last week</span><small>+106.0% vs 4-week average</small></div><div class="tile"><div class="k"><span>Ad spend</span></div><b>$7,837</b><span class="chip flat">▲ +1.8% vs last week</span><small>+4.7% vs 4-week average</small></div><div class="tile"><div class="k"><span>Return on ad spend</span></div><b>5.78x</b><span class="chip bad">▼ -4.9% vs last week</span><small>-4.4% vs 4-week average</small></div><div class="tile"><div class="k"><span>Support tickets</span></div><b>134</b><span class="chip good">▼ -3.6% vs last week</span><small>+0.2% vs 4-week average</small></div><div class="tile"><div class="k"><span>Avg first response</span></div><b>84 min</b><span class="chip bad">▲ +25.4% vs last week</span><small>+14.3% vs 4-week average</small></div></div>
+<div class="grid2">
+<div class="card"><h3>Revenue by week</h3><p class="sub">Last 8 weeks, by week start date</p><svg viewBox="0 0 640 270" role="img" aria-label="Revenue by week"><line class="gridline" x1="58" x2="562" y1="236.0" y2="236.0"/><text x="50" y="240.5" text-anchor="end">$56k</text><line class="gridline" x1="58" x2="562" y1="192.4" y2="192.4"/><text x="50" y="196.9" text-anchor="end">$58k</text><line class="gridline" x1="58" x2="562" y1="148.8" y2="148.8"/><text x="50" y="153.3" text-anchor="end">$60k</text><line class="gridline" x1="58" x2="562" y1="105.2" y2="105.2"/><text x="50" y="109.7" text-anchor="end">$62k</text><line class="gridline" x1="58" x2="562" y1="61.6" y2="61.6"/><text x="50" y="66.1" text-anchor="end">$64k</text><line class="gridline" x1="58" x2="562" y1="18.0" y2="18.0"/><text x="50" y="22.5" text-anchor="end">$66k</text><path class="area" d="M58.0 195.7 L130.0 214.8 L202.0 152.1 L274.0 148.2 L346.0 112.1 L418.0 63.8 L490.0 58.0 L562.0 70.1 L562.0 236 L58.0 236 Z"/><path class="line" d="M58.0 195.7 L130.0 214.8 L202.0 152.1 L274.0 148.2 L346.0 112.1 L418.0 63.8 L490.0 58.0 L562.0 70.1"/><circle class="hit" cx="58.0" cy="195.7" r="16" data-tip="Week of 3 Aug to 9 Aug 2026
+$57,848.90"/><circle class="dot" cx="58.0" cy="195.7" r="4"/><text x="130.0" y="260" text-anchor="middle">10 Aug</text><circle class="hit" cx="130.0" cy="214.8" r="16" data-tip="Week of 10 Aug to 16 Aug 2026
+$56,970.32"/><circle class="dot" cx="130.0" cy="214.8" r="4"/><circle class="hit" cx="202.0" cy="152.1" r="16" data-tip="Week of 17 Aug to 23 Aug 2026
+$59,847.26"/><circle class="dot" cx="202.0" cy="152.1" r="4"/><text x="274.0" y="260" text-anchor="middle">24 Aug</text><circle class="hit" cx="274.0" cy="148.2" r="16" data-tip="Week of 24 Aug to 30 Aug 2026
+$60,025.78"/><circle class="dot" cx="274.0" cy="148.2" r="4"/><circle class="hit" cx="346.0" cy="112.1" r="16" data-tip="Week of 31 Aug to 6 Sep 2026
+$61,683.18"/><circle class="dot" cx="346.0" cy="112.1" r="4"/><text x="418.0" y="260" text-anchor="middle">7 Sep</text><circle class="hit" cx="418.0" cy="63.8" r="16" data-tip="Week of 7 Sep to 13 Sep 2026
+$63,899.63"/><circle class="dot" cx="418.0" cy="63.8" r="4"/><circle class="hit" cx="490.0" cy="58.0" r="16" data-tip="Week of 14 Sep to 20 Sep 2026
+$64,164.45"/><circle class="dot" cx="490.0" cy="58.0" r="4"/><text x="562.0" y="260" text-anchor="middle">21 Sep</text><circle class="hit" cx="562.0" cy="70.1" r="16" data-tip="Week of 21 Sep to 27 Sep 2026
+$63,611.14"/><circle class="dot" cx="562.0" cy="70.1" r="5"/><text class="val" x="572.0" y="74.6">$63.6k</text></svg></div>
+<div class="card"><h3>Revenue by day</h3><p class="sub">This week, Monday to Sunday</p>
+<svg viewBox="0 0 640 270" role="img" aria-label="Revenue by day"><line class="gridline" x1="58" x2="628" y1="236.0" y2="236.0"/><text x="50" y="240.5" text-anchor="end">$0</text><line class="gridline" x1="58" x2="628" y1="166.0" y2="166.0"/><text x="50" y="170.5" text-anchor="end">$5k</text><line class="gridline" x1="58" x2="628" y1="96.0" y2="96.0"/><text x="50" y="100.5" text-anchor="end">$10k</text><line class="gridline" x1="58" x2="628" y1="26.0" y2="26.0"/><text x="50" y="30.5" text-anchor="end">$15k</text><rect class="hit" x="58.0" y="26" width="81.4" height="210" data-tip="Monday 21 Sep
+$8,981.47 from 169 orders"/><path class="col" d="M76.7 236 V114.3 Q76.7 110.3 80.7 110.3 H116.7 Q120.7 110.3 120.7 114.3 V236 Z"/><text x="98.7" y="260" text-anchor="middle">Mon</text><rect class="hit" x="139.4" y="26" width="81.4" height="210" data-tip="Tuesday 22 Sep
+$8,328.51 from 163 orders"/><path class="col" d="M158.1 236 V123.4 Q158.1 119.4 162.1 119.4 H198.1 Q202.1 119.4 202.1 123.4 V236 Z"/><text x="180.1" y="260" text-anchor="middle">Tue</text><rect class="hit" x="220.9" y="26" width="81.4" height="210" data-tip="Wednesday 23 Sep
+$8,383.31 from 165 orders"/><path class="col" d="M239.6 236 V122.6 Q239.6 118.6 243.6 118.6 H279.6 Q283.6 118.6 283.6 122.6 V236 Z"/><text x="261.6" y="260" text-anchor="middle">Wed</text><rect class="hit" x="302.3" y="26" width="81.4" height="210" data-tip="Thursday 24 Sep
+$9,040.17 from 173 orders"/><path class="col" d="M321.0 236 V113.4 Q321.0 109.4 325.0 109.4 H361.0 Q365.0 109.4 365.0 113.4 V236 Z"/><text x="343.0" y="260" text-anchor="middle">Thu</text><rect class="hit" x="383.7" y="26" width="81.4" height="210" data-tip="Friday 25 Sep
+$9,094.31 from 180 orders"/><path class="col" d="M402.4 236 V112.7 Q402.4 108.7 406.4 108.7 H442.4 Q446.4 108.7 446.4 112.7 V236 Z"/><text x="424.4" y="260" text-anchor="middle">Fri</text><rect class="hit" x="465.1" y="26" width="81.4" height="210" data-tip="Saturday 26 Sep
+$10,423.51 from 204 orders"/><path class="col" d="M483.9 236 V94.1 Q483.9 90.1 487.9 90.1 H523.9 Q527.9 90.1 527.9 94.1 V236 Z"/><text x="505.9" y="260" text-anchor="middle">Sat</text><text class="val" x="505.9" y="83.1" text-anchor="middle">$10.4k</text><rect class="hit" x="546.6" y="26" width="81.4" height="210" data-tip="Sunday 27 Sep
+$9,359.86 from 184 orders"/><path class="col" d="M565.3 236 V109.0 Q565.3 105.0 569.3 105.0 H605.3 Q609.3 105.0 609.3 109.0 V236 Z"/><text x="587.3" y="260" text-anchor="middle">Sun</text></svg></div>
+</div>
+</section>
+<section id="channels" class="glass">
+<h2>Channels</h2>
+<p class="lede">Where the orders came from, and what the paid channels returned.</p>
+<div class="grid2">
+<div class="card"><h3>Revenue by channel</h3><div class="bars"><div class="brow" data-tip="Paid Search
+$18,462.93 from 354 orders
+29.0% of revenue"><span class="l">Paid Search</span><span class="t"><span class="f" style="width:96.15%"></span></span><span class="v num">$18,463</span></div><div class="brow" data-tip="Paid Social
+$14,888.35 from 316 orders
+23.4% of revenue"><span class="l">Paid Social</span><span class="t"><span class="f" style="width:77.54%"></span></span><span class="v num">$14,888</span></div><div class="brow" data-tip="Email
+$11,908.39 from 206 orders
+18.7% of revenue"><span class="l">Email</span><span class="t"><span class="f" style="width:62.02%"></span></span><span class="v num">$11,908</span></div><div class="brow" data-tip="Organic
+$18,351.47 from 362 orders
+28.8% of revenue"><span class="l">Organic</span><span class="t"><span class="f" style="width:95.57%"></span></span><span class="v num">$18,351</span></div></div></div>
+<div class="card"><h3>Return on ad spend</h3><div class="bars"><div class="brow" data-tip="Paid Search
+$18,462.93 revenue on $4,068.95 spend"><span class="l">Paid Search</span><span class="t"><span class="f" style="width:12.45%"></span><span class="m" style="left:8.23%"></span></span><span class="v num">4.54x</span></div><div class="brow" data-tip="Paid Social
+$14,888.35 revenue on $3,428.39 spend"><span class="l">Paid Social</span><span class="t"><span class="f" style="width:11.91%"></span><span class="m" style="left:8.23%"></span></span><span class="v num">4.34x</span></div><div class="brow" data-tip="Email
+$11,908.39 revenue on $339.76 spend"><span class="l">Email</span><span class="t"><span class="f" style="width:96.15%"></span><span class="m" style="left:8.23%"></span></span><span class="v num">35.05x</span></div></div>
+<div class="legend"><i></i> Floor set in the config: 3.00x</div></div>
+</div>
+<div class="scroll"><table><thead><tr><th>Channel</th><th class=n>Revenue</th><th class=n>Orders</th><th class=n>Avg order</th><th class=n>Share</th><th class=n>Ad spend</th><th class=n>ROAS</th></tr></thead><tbody><tr><td>Paid Search</td><td class=n>$18,462.93</td><td class=n>354</td><td class=n>$52.16</td><td class=n>29.0%</td><td class=n>$4,068.95</td><td class=n>4.54x</td></tr><tr><td>Paid Social</td><td class=n>$14,888.35</td><td class=n>316</td><td class=n>$47.12</td><td class=n>23.4%</td><td class=n>$3,428.39</td><td class=n>4.34x</td></tr><tr><td>Email</td><td class=n>$11,908.39</td><td class=n>206</td><td class=n>$57.81</td><td class=n>18.7%</td><td class=n>$339.76</td><td class=n>35.05x</td></tr><tr><td>Organic</td><td class=n>$18,351.47</td><td class=n>362</td><td class=n>$50.69</td><td class=n>28.8%</td><td class=n>none</td><td class=n>n/a</td></tr><tr class="total"><td>Total</td><td class=n>$63,611.14</td><td class=n>1,238</td><td class=n>$51.38</td><td class=n>100.0%</td><td class=n>$7,837.10</td><td class=n>5.78x</td></tr></tbody></table></div>
+</section>
+<section id="support" class="glass">
+<h2>Refunds and support</h2>
+<p class="lede">$4,467.33 refunded across
+ 107 refunds (7.0% of revenue).
+ 134 tickets, median first response
+ 46 min,
+ 91.8% answered within 240 minutes.</p>
+<div class="grid2">
+<div><h3>Refunds by reason</h3><p class="sub">Largest amount first</p><div class="scroll"><table><thead><tr><th>Reason</th><th class=n>Refunds</th><th class=n>Amount</th></tr></thead><tbody><tr><td>Damaged in transit</td><td class=n>60</td><td class=n>$2,374.94</td></tr><tr><td>Changed mind</td><td class=n>19</td><td class=n>$839.56</td></tr><tr><td>Wrong size</td><td class=n>15</td><td class=n>$600.63</td></tr><tr><td>Arrived late</td><td class=n>8</td><td class=n>$340.06</td></tr><tr><td>Not as described</td><td class=n>5</td><td class=n>$312.14</td></tr><tr class="total"><td>Total</td><td class=n>107</td><td class=n>$4,467.33</td></tr></tbody></table></div></div>
+<div class="card"><h3>Tickets by category</h3><div class="bars"><div class="brow" data-tip="Order status
+56 tickets, 1 awaiting reply
+Avg first response 80 min"><span class="l">Order status</span><span class="t"><span class="f" style="width:96.15%"></span></span><span class="v num">56</span></div><div class="brow" data-tip="Returns
+33 tickets, 3 awaiting reply
+Avg first response 78 min"><span class="l">Returns</span><span class="t"><span class="f" style="width:56.66%"></span></span><span class="v num">33</span></div><div class="brow" data-tip="Product question
+20 tickets, 0 awaiting reply
+Avg first response 91 min"><span class="l">Product question</span><span class="t"><span class="f" style="width:34.34%"></span></span><span class="v num">20</span></div><div class="brow" data-tip="Billing
+13 tickets, 0 awaiting reply
+Avg first response 102 min"><span class="l">Billing</span><span class="t"><span class="f" style="width:22.32%"></span></span><span class="v num">13</span></div><div class="brow" data-tip="Shipping damage
+12 tickets, 0 awaiting reply
+Avg first response 88 min"><span class="l">Shipping damage</span><span class="t"><span class="f" style="width:20.60%"></span></span><span class="v num">12</span></div></div></div>
+</div>
+</section>
+<section id="quality" class="glass">
+<h2>Data quality</h2>
+<p class="lede">Every file is checked before any number is calculated. A failed check stops the
+ run and no report is written, so this page only exists because the gate passed.</p>
+<div class="scroll"><table><thead><tr><th>Level</th><th>Check</th><th>File</th><th>Detail</th></tr></thead><tbody><tr><td><span class="lvl info">INFO</span></td><td>control total</td><td>control_totals_2026-09-21.csv</td><td>6 control totals from the source system match the files exactly</td></tr></tbody></table></div>
+<h3 style="margin-top:20px">Files read</h3>
+<p class="sub">1,506 rows from 5 files. The hash identifies the exact
+ file each number came from.</p>
+<div class="scroll"><table><thead><tr><th>File</th><th class=n>Rows</th><th>SHA-256</th></tr></thead><tbody><tr><td>orders_2026-09-21.csv</td><td class=n>1,238</td><td><code>ffeeca494079edca</code></td></tr><tr><td>refunds_2026-09-21.csv</td><td class=n>107</td><td><code>9fb3c873f33a0c47</code></td></tr><tr><td>ad_spend_2026-09-21.xlsx</td><td class=n>21</td><td><code>ab41b185c80a5e05</code></td></tr><tr><td>tickets_2026-09-21.csv</td><td class=n>134</td><td><code>53b87fba77e92adf</code></td></tr><tr><td>control_totals_2026-09-21.csv</td><td class=n>6</td><td><code>e45daf46af980e26</code></td></tr></tbody></table></div>
+</section>
+</main>
+<footer>Built from the inbox by automated-reporting-system. The same input files always produce
+ this same report.</footer>
+</div>
+<div id="tip" role="status"></div>
+<script>
+(function(){var t=document.getElementById('tip');if(!t)return;
+function show(e){var el=e.target.closest('[data-tip]');if(!el){t.style.opacity=0;return}
+t.textContent=el.getAttribute('data-tip');t.style.opacity=1;
+var x=Math.min(Math.max(e.clientX,90),window.innerWidth-90);
+t.style.left=x+'px';t.style.top=Math.max(e.clientY-12,40)+'px'}
+document.addEventListener('pointermove',show);document.addEventListener('pointerdown',show);
+document.addEventListener('pointerleave',function(){t.style.opacity=0})})();
+</script>
+</body>
+</html>

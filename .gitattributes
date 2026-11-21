@@ -1,0 +1,2 @@
+# Sample outputs are byte-stable; keep git from rewriting line endings.
+samples/** -text

@@ -1,0 +1,303 @@
+{
+  "files": [
+    {
+      "file": "orders_2026-09-21.csv",
+      "kind": "orders",
+      "rows": 1238,
+      "sha256": "ffeeca494079edcae81d614f5bea1732ca19eb23bde8d8090a7b0cd5d13490a5"
+    },
+    {
+      "file": "refunds_2026-09-21.csv",
+      "kind": "refunds",
+      "rows": 107,
+      "sha256": "9fb3c873f33a0c475822745bcba09dbffbe91e3b375015c5b41e7b160ceebd39"
+    },
+    {
+      "file": "ad_spend_2026-09-21.xlsx",
+      "kind": "ad_spend",
+      "rows": 21,
+      "sha256": "ab41b185c80a5e051f195d138d638932229b9068bc93917a418e2b71300fabea"
+    },
+    {
+      "file": "tickets_2026-09-21.csv",
+      "kind": "tickets",
+      "rows": 134,
+      "sha256": "53b87fba77e92adf3a8a6ef141bdc25c84e3be5f103028423fcf4be5186e2c54"
+    },
+    {
+      "file": "control_totals_2026-09-21.csv",
+      "kind": "control_totals",
+      "rows": 6,
+      "sha256": "e45daf46af980e2676b8c264330d865211bec15d47b255c80a771e0682647962"
+    }
+  ],
+  "findings": [
+    {
+      "check": "control_total",
+      "file": "control_totals_2026-09-21.csv",
+      "level": "info",
+      "message": "6 control totals from the source system match the files exactly"
+    }
+  ],
+  "kpis": {
+    "alerts": [
+      {
+        "message": "Refund rate 7.0% is above the 6.0% limit",
+        "metric": "refund_rate"
+      }
+    ],
+    "channels": [
+      {
+        "aov_cents": 5216,
+        "channel": "Paid Search",
+        "clicks": 3063,
+        "cpc_cents": 133,
+        "orders": 354,
+        "revenue_cents": 1846293,
+        "revenue_share": 0.2902,
+        "roas": 4.54,
+        "spend_cents": 406895
+      },
+      {
+        "aov_cents": 4712,
+        "channel": "Paid Social",
+        "clicks": 3627,
+        "cpc_cents": 95,
+        "orders": 316,
+        "revenue_cents": 1488835,
+        "revenue_share": 0.2341,
+        "roas": 4.34,
+        "spend_cents": 342839
+      },
+      {
+        "aov_cents": 5781,
+        "channel": "Email",
+        "clicks": 3100,
+        "cpc_cents": 11,
+        "orders": 206,
+        "revenue_cents": 1190839,
+        "revenue_share": 0.1872,
+        "roas": 35.05,
+        "spend_cents": 33976
+      },
+      {
+        "aov_cents": 5069,
+        "channel": "Organic",
+        "clicks": 0,
+        "cpc_cents": null,
+        "orders": 362,
+        "revenue_cents": 1835147,
+        "revenue_share": 0.2885,
+        "roas": null,
+        "spend_cents": 0
+      }
+    ],
+    "company": "Fernhollow Supply Co.",
+    "comparisons": {
+      "aov_cents": {
+        "previous": 5141,
+        "trailing_avg": 5192,
+        "trailing_weeks": 4,
+        "value": 5138,
+        "vs_trailing_pct": -0.0104,
+        "wow_pct": -0.0006
+      },
+      "avg_first_response_min": {
+        "previous": 67.2,
+        "trailing_avg": 73.8,
+        "trailing_weeks": 4,
+        "value": 84.3,
+        "vs_trailing_pct": 0.1427,
+        "wow_pct": 0.2545
+      },
+      "orders": {
+        "previous": 1248,
+        "trailing_avg": 1202.8,
+        "trailing_weeks": 4,
+        "value": 1238,
+        "vs_trailing_pct": 0.0293,
+        "wow_pct": -0.008
+      },
+      "paid_roas": {
+        "previous": 6.08,
+        "trailing_avg": 6.05,
+        "trailing_weeks": 4,
+        "value": 5.78,
+        "vs_trailing_pct": -0.0438,
+        "wow_pct": -0.0493
+      },
+      "refund_rate": {
+        "previous": 0.0342,
+        "trailing_avg": 0.0341,
+        "trailing_weeks": 4,
+        "value": 0.0702,
+        "vs_trailing_pct": 1.0602,
+        "wow_pct": 1.0526
+      },
+      "revenue_cents": {
+        "previous": 6416445,
+        "trailing_avg": 6244326,
+        "trailing_weeks": 4,
+        "value": 6361114,
+        "vs_trailing_pct": 0.0187,
+        "wow_pct": -0.0086
+      },
+      "spend_cents": {
+        "previous": 769657,
+        "trailing_avg": 748666,
+        "trailing_weeks": 4,
+        "value": 783710,
+        "vs_trailing_pct": 0.0468,
+        "wow_pct": 0.0183
+      },
+      "tickets": {
+        "previous": 139,
+        "trailing_avg": 133.8,
+        "trailing_weeks": 4,
+        "value": 134,
+        "vs_trailing_pct": 0.0019,
+        "wow_pct": -0.036
+      }
+    },
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "orders": 169,
+        "revenue_cents": 898147,
+        "spend_cents": 104680,
+        "tickets": 22
+      },
+      {
+        "date": "2026-09-22",
+        "orders": 163,
+        "revenue_cents": 832851,
+        "spend_cents": 118316,
+        "tickets": 18
+      },
+      {
+        "date": "2026-09-23",
+        "orders": 165,
+        "revenue_cents": 838331,
+        "spend_cents": 108887,
+        "tickets": 18
+      },
+      {
+        "date": "2026-09-24",
+        "orders": 173,
+        "revenue_cents": 904017,
+        "spend_cents": 113575,
+        "tickets": 18
+      },
+      {
+        "date": "2026-09-25",
+        "orders": 180,
+        "revenue_cents": 909431,
+        "spend_cents": 114552,
+        "tickets": 15
+      },
+      {
+        "date": "2026-09-26",
+        "orders": 204,
+        "revenue_cents": 1042351,
+        "spend_cents": 113823,
+        "tickets": 22
+      },
+      {
+        "date": "2026-09-27",
+        "orders": 184,
+        "revenue_cents": 935986,
+        "spend_cents": 109877,
+        "tickets": 21
+      }
+    ],
+    "period": {
+      "end": "2026-09-27",
+      "label": "21 Sep to 27 Sep 2026",
+      "start": "2026-09-21"
+    },
+    "refund_reasons": [
+      {
+        "amount_cents": 237494,
+        "count": 60,
+        "reason": "Damaged in transit"
+      },
+      {
+        "amount_cents": 83956,
+        "count": 19,
+        "reason": "Changed mind"
+      },
+      {
+        "amount_cents": 60063,
+        "count": 15,
+        "reason": "Wrong size"
+      },
+      {
+        "amount_cents": 34006,
+        "count": 8,
+        "reason": "Arrived late"
+      },
+      {
+        "amount_cents": 31214,
+        "count": 5,
+        "reason": "Not as described"
+      }
+    ],
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1238,
+      "refunds": 107,
+      "tickets": 134
+    },
+    "ticket_categories": [
+      {
+        "avg_first_response_min": 79.7,
+        "awaiting_reply": 1,
+        "category": "Order status",
+        "count": 56
+      },
+      {
+        "avg_first_response_min": 78.5,
+        "awaiting_reply": 3,
+        "category": "Returns",
+        "count": 33
+      },
+      {
+        "avg_first_response_min": 91.4,
+        "awaiting_reply": 0,
+        "category": "Product question",
+        "count": 20
+      },
+      {
+        "avg_first_response_min": 102.4,
+        "awaiting_reply": 0,
+        "category": "Billing",
+        "count": 13
+      },
+      {
+        "avg_first_response_min": 88.3,
+        "awaiting_reply": 0,
+        "category": "Shipping damage",
+        "count": 12
+      }
+    ],
+    "totals": {
+      "aov_cents": 5138,
+      "avg_first_response_min": 84.3,
+      "clicks": 9790,
+      "items": 2119,
+      "median_first_response_min": 45.5,
+      "net_revenue_cents": 5914381,
+      "orders": 1238,
+      "paid_revenue_cents": 4525967,
+      "paid_roas": 5.78,
+      "refund_cents": 446733,
+      "refund_rate": 0.0702,
+      "refunds": 107,
+      "revenue_cents": 6361114,
+      "sla_met_rate": 0.9179,
+      "spend_cents": 783710,
+      "tickets": 134,
+      "tickets_answered": 130
+    }
+  }
+}

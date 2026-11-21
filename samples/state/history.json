@@ -1,0 +1,258 @@
+{
+  "2026-08-03": {
+    "period": {
+      "end": "2026-08-09",
+      "label": "3 Aug to 9 Aug 2026",
+      "start": "2026-08-03"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1113,
+      "refunds": 37,
+      "tickets": 118
+    },
+    "totals": {
+      "aov_cents": 5198,
+      "avg_first_response_min": 77.9,
+      "clicks": 8600,
+      "items": 1924,
+      "median_first_response_min": 56.5,
+      "net_revenue_cents": 5600953,
+      "orders": 1113,
+      "paid_revenue_cents": 4194135,
+      "paid_roas": 6.11,
+      "refund_cents": 183937,
+      "refund_rate": 0.0318,
+      "refunds": 37,
+      "revenue_cents": 5784890,
+      "sla_met_rate": 0.9237,
+      "spend_cents": 686625,
+      "tickets": 118,
+      "tickets_answered": 112
+    }
+  },
+  "2026-08-10": {
+    "period": {
+      "end": "2026-08-16",
+      "label": "10 Aug to 16 Aug 2026",
+      "start": "2026-08-10"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1119,
+      "refunds": 33,
+      "tickets": 123
+    },
+    "totals": {
+      "aov_cents": 5091,
+      "avg_first_response_min": 85.4,
+      "clicks": 9116,
+      "items": 1955,
+      "median_first_response_min": 64.0,
+      "net_revenue_cents": 5570386,
+      "orders": 1119,
+      "paid_revenue_cents": 4187572,
+      "paid_roas": 6.02,
+      "refund_cents": 126646,
+      "refund_rate": 0.0222,
+      "refunds": 33,
+      "revenue_cents": 5697032,
+      "sla_met_rate": 0.8862,
+      "spend_cents": 695144,
+      "tickets": 123,
+      "tickets_answered": 116
+    }
+  },
+  "2026-08-17": {
+    "period": {
+      "end": "2026-08-23",
+      "label": "17 Aug to 23 Aug 2026",
+      "start": "2026-08-17"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1133,
+      "refunds": 39,
+      "tickets": 125
+    },
+    "totals": {
+      "aov_cents": 5282,
+      "avg_first_response_min": 68.0,
+      "clicks": 9229,
+      "items": 2022,
+      "median_first_response_min": 41.0,
+      "net_revenue_cents": 5803690,
+      "orders": 1133,
+      "paid_revenue_cents": 4321350,
+      "paid_roas": 5.98,
+      "refund_cents": 181036,
+      "refund_rate": 0.0302,
+      "refunds": 39,
+      "revenue_cents": 5984726,
+      "sla_met_rate": 0.936,
+      "spend_cents": 722807,
+      "tickets": 125,
+      "tickets_answered": 119
+    }
+  },
+  "2026-08-24": {
+    "period": {
+      "end": "2026-08-30",
+      "label": "24 Aug to 30 Aug 2026",
+      "start": "2026-08-24"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1159,
+      "refunds": 47,
+      "tickets": 125
+    },
+    "totals": {
+      "aov_cents": 5179,
+      "avg_first_response_min": 81.6,
+      "clicks": 9154,
+      "items": 1984,
+      "median_first_response_min": 57.0,
+      "net_revenue_cents": 5800104,
+      "orders": 1159,
+      "paid_revenue_cents": 4281290,
+      "paid_roas": 5.92,
+      "refund_cents": 202474,
+      "refund_rate": 0.0337,
+      "refunds": 47,
+      "revenue_cents": 6002578,
+      "sla_met_rate": 0.92,
+      "spend_cents": 722883,
+      "tickets": 125,
+      "tickets_answered": 120
+    }
+  },
+  "2026-08-31": {
+    "period": {
+      "end": "2026-09-06",
+      "label": "31 Aug to 6 Sep 2026",
+      "start": "2026-08-31"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1194,
+      "refunds": 45,
+      "tickets": 134
+    },
+    "totals": {
+      "aov_cents": 5166,
+      "avg_first_response_min": 65.7,
+      "clicks": 9328,
+      "items": 2080,
+      "median_first_response_min": 42.0,
+      "net_revenue_cents": 5982401,
+      "orders": 1194,
+      "paid_revenue_cents": 4415448,
+      "paid_roas": 5.93,
+      "refund_cents": 185917,
+      "refund_rate": 0.0301,
+      "refunds": 45,
+      "revenue_cents": 6168318,
+      "sla_met_rate": 0.903,
+      "spend_cents": 744918,
+      "tickets": 134,
+      "tickets_answered": 127
+    }
+  },
+  "2026-09-07": {
+    "period": {
+      "end": "2026-09-13",
+      "label": "7 Sep to 13 Sep 2026",
+      "start": "2026-09-07"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1210,
+      "refunds": 45,
+      "tickets": 137
+    },
+    "totals": {
+      "aov_cents": 5281,
+      "avg_first_response_min": 80.6,
+      "clicks": 9406,
+      "items": 2063,
+      "median_first_response_min": 56.0,
+      "net_revenue_cents": 6145041,
+      "orders": 1210,
+      "paid_revenue_cents": 4734153,
+      "paid_roas": 6.25,
+      "refund_cents": 244922,
+      "refund_rate": 0.0383,
+      "refunds": 45,
+      "revenue_cents": 6389963,
+      "sla_met_rate": 0.9051,
+      "spend_cents": 757205,
+      "tickets": 137,
+      "tickets_answered": 131
+    }
+  },
+  "2026-09-14": {
+    "period": {
+      "end": "2026-09-20",
+      "label": "14 Sep to 20 Sep 2026",
+      "start": "2026-09-14"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1248,
+      "refunds": 50,
+      "tickets": 139
+    },
+    "totals": {
+      "aov_cents": 5141,
+      "avg_first_response_min": 67.2,
+      "clicks": 9637,
+      "items": 2100,
+      "median_first_response_min": 55.0,
+      "net_revenue_cents": 6196786,
+      "orders": 1248,
+      "paid_revenue_cents": 4681204,
+      "paid_roas": 6.08,
+      "refund_cents": 219659,
+      "refund_rate": 0.0342,
+      "refunds": 50,
+      "revenue_cents": 6416445,
+      "sla_met_rate": 0.9137,
+      "spend_cents": 769657,
+      "tickets": 139,
+      "tickets_answered": 129
+    }
+  },
+  "2026-09-21": {
+    "period": {
+      "end": "2026-09-27",
+      "label": "21 Sep to 27 Sep 2026",
+      "start": "2026-09-21"
+    },
+    "row_counts": {
+      "ad_spend": 21,
+      "orders": 1238,
+      "refunds": 107,
+      "tickets": 134
+    },
+    "totals": {
+      "aov_cents": 5138,
+      "avg_first_response_min": 84.3,
+      "clicks": 9790,
+      "items": 2119,
+      "median_first_response_min": 45.5,
+      "net_revenue_cents": 5914381,
+      "orders": 1238,
+      "paid_revenue_cents": 4525967,
+      "paid_roas": 5.78,
+      "refund_cents": 446733,
+      "refund_rate": 0.0702,
+      "refunds": 107,
+      "revenue_cents": 6361114,
+      "sla_met_rate": 0.9179,
+      "spend_cents": 783710,
+      "tickets": 134,
+      "tickets_answered": 130
+    }
+  }
+}

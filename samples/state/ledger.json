@@ -1,0 +1,178 @@
+{
+  "2026-08-03": {
+    "ad_spend": {
+      "file": "ad_spend_2026-08-03.xlsx",
+      "rows": 21,
+      "sha256": "5e1cd6a849ed7df911c072f7e0f92e052fb83971f6d0d3222c76f80d1a7f38d3"
+    },
+    "orders": {
+      "file": "orders_2026-08-03.csv",
+      "rows": 1113,
+      "sha256": "3874ccfde2a8e3b9240ad5f12e7418f51fff38c41ab9ca868d7049489a73f470"
+    },
+    "refunds": {
+      "file": "refunds_2026-08-03.csv",
+      "rows": 37,
+      "sha256": "c76d92c746a33fe8bcfa1de0171b882ab1da355e90e9662d5a91db55fbae916d"
+    },
+    "tickets": {
+      "file": "tickets_2026-08-03.csv",
+      "rows": 118,
+      "sha256": "d6a87b3d880a74e37c76142602a6fc1e2e9feaf977fd80bd7de3b0f845460c97"
+    }
+  },
+  "2026-08-10": {
+    "ad_spend": {
+      "file": "ad_spend_2026-08-10.xlsx",
+      "rows": 21,
+      "sha256": "9beb0f7120d3eb7343039dc459da7ac258815bb922af82fc076f8691a2c0a226"
+    },
+    "orders": {
+      "file": "orders_2026-08-10.csv",
+      "rows": 1119,
+      "sha256": "5305a2788f52981348c90f61b9a7c60e898d1d31a47418a8248781b0846559ff"
+    },
+    "refunds": {
+      "file": "refunds_2026-08-10.csv",
+      "rows": 33,
+      "sha256": "edf939384d525b4bbaffdaf9eb943b0aa250ba139fa24f2891b7652f951e89d7"
+    },
+    "tickets": {
+      "file": "tickets_2026-08-10.csv",
+      "rows": 123,
+      "sha256": "9e6a0f82212c66b2b1160221d9a9be02d0f7dbb57df7a13ce7b28f2082cb5d0e"
+    }
+  },
+  "2026-08-17": {
+    "ad_spend": {
+      "file": "ad_spend_2026-08-17.xlsx",
+      "rows": 21,
+      "sha256": "5506e4b6013d81e66c2b1b4ea3b7c0d65288e2aa3052de25ce9babad2c3e9d1d"
+    },
+    "orders": {
+      "file": "orders_2026-08-17.csv",
+      "rows": 1133,
+      "sha256": "1dc68db95fe7e2eee4be0ce940ceb604f7f3f4cc046c9513ca1f380253cc6857"
+    },
+    "refunds": {
+      "file": "refunds_2026-08-17.csv",
+      "rows": 39,
+      "sha256": "68a6432b39a750ae7c3d4eb9f876a5050d1b87d66a89b397b33696efa0b11e76"
+    },
+    "tickets": {
+      "file": "tickets_2026-08-17.csv",
+      "rows": 125,
+      "sha256": "39d0cbf388990e2477c5fbbf60f190ecf3f02da9ee7d07658fc08d66cd88d7f4"
+    }
+  },
+  "2026-08-24": {
+    "ad_spend": {
+      "file": "ad_spend_2026-08-24.xlsx",
+      "rows": 21,
+      "sha256": "d0d8a9bca2272fb2a81890c45f347c95fb9cdb11a880fa1b2d877f854dbcfceb"
+    },
+    "orders": {
+      "file": "orders_2026-08-24.csv",
+      "rows": 1159,
+      "sha256": "9a0cb805cf39893210bf0b3a31cd405f336f9351791b5cea4800312dc0c4abd8"
+    },
+    "refunds": {
+      "file": "refunds_2026-08-24.csv",
+      "rows": 47,
+      "sha256": "4bda34eac8de1866a838c6713d313088e96cfb622b6e09741012036c4f7f6f28"
+    },
+    "tickets": {
+      "file": "tickets_2026-08-24.csv",
+      "rows": 125,
+      "sha256": "7a68c72fac9fb27c3d052b640d2b003af2041a14b53e8d3b37b04ca935aecc91"
+    }
+  },
+  "2026-08-31": {
+    "ad_spend": {
+      "file": "ad_spend_2026-08-31.xlsx",
+      "rows": 21,
+      "sha256": "9de416db23728801a9db1ffcaafacbe6f8746d32c944348759ccfa41f03bf4bc"
+    },
+    "orders": {
+      "file": "orders_2026-08-31.csv",
+      "rows": 1194,
+      "sha256": "cfbc6d4ddfdebccaebd78511d6b2cec56ceb14df85169706b42894d27c317015"
+    },
+    "refunds": {
+      "file": "refunds_2026-08-31.csv",
+      "rows": 45,
+      "sha256": "bf012583caed6a241d3c68e520e488de5196d9c34063b92c7bab93a4bdd7ef86"
+    },
+    "tickets": {
+      "file": "tickets_2026-08-31.csv",
+      "rows": 134,
+      "sha256": "dcbfab8d08df44759ad2d64ae794b638aca3508a5f661a381884f837e6c29f6a"
+    }
+  },
+  "2026-09-07": {
+    "ad_spend": {
+      "file": "ad_spend_2026-09-07.xlsx",
+      "rows": 21,
+      "sha256": "0656746433d87ba26a1b348db6e3901c1a8574bcc14fead524d6f4d610183ca6"
+    },
+    "orders": {
+      "file": "orders_2026-09-07.csv",
+      "rows": 1210,
+      "sha256": "958a6b04662925b937e614a208f61a1d0bbb15f765677c502e71616df3bd0ec6"
+    },
+    "refunds": {
+      "file": "refunds_2026-09-07.csv",
+      "rows": 45,
+      "sha256": "77c7a9c3300147e58a8cb967dcfee0ebd8cff7594c7d0f39a440b72afc67d6b7"
+    },
+    "tickets": {
+      "file": "tickets_2026-09-07.csv",
+      "rows": 137,
+      "sha256": "baf51e6b92574552ea9c06d12da39639f6db1db7553a69ccc6bf18f8c2db56d7"
+    }
+  },
+  "2026-09-14": {
+    "ad_spend": {
+      "file": "ad_spend_2026-09-14.xlsx",
+      "rows": 21,
+      "sha256": "e31f18ddc095ffd5138fb8d6b97f7d72bb94543c0afef7813b3a14b2f6b234b1"
+    },
+    "orders": {
+      "file": "orders_2026-09-14.csv",
+      "rows": 1248,
+      "sha256": "368268db4f0e03c650e9bf6d4d995e3604f9d2850101f2e5369e3f2f45ce372d"
+    },
+    "refunds": {
+      "file": "refunds_2026-09-14.csv",
+      "rows": 50,
+      "sha256": "1693d944f345fec1a1434e00e28de95c913ba24d8f3d3d41cd0b0dd671ec4411"
+    },
+    "tickets": {
+      "file": "tickets_2026-09-14.csv",
+      "rows": 139,
+      "sha256": "152d999220a10ad138cc5fb77f3719f12627fc158679c4738d5200d43f940a41"
+    }
+  },
+  "2026-09-21": {
+    "ad_spend": {
+      "file": "ad_spend_2026-09-21.xlsx",
+      "rows": 21,
+      "sha256": "ab41b185c80a5e051f195d138d638932229b9068bc93917a418e2b71300fabea"
+    },
+    "orders": {
+      "file": "orders_2026-09-21.csv",
+      "rows": 1238,
+      "sha256": "ffeeca494079edcae81d614f5bea1732ca19eb23bde8d8090a7b0cd5d13490a5"
+    },
+    "refunds": {
+      "file": "refunds_2026-09-21.csv",
+      "rows": 107,
+      "sha256": "9fb3c873f33a0c475822745bcba09dbffbe91e3b375015c5b41e7b160ceebd39"
+    },
+    "tickets": {
+      "file": "tickets_2026-09-21.csv",
+      "rows": 134,
+      "sha256": "53b87fba77e92adf3a8a6ef141bdc25c84e3be5f103028423fcf4be5186e2c54"
+    }
+  }
+}

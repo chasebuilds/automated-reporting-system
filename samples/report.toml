@@ -1,0 +1,60 @@
+# Weekly report settings. Paths are relative to this file.
+
+[company]
+name = "Fernhollow Supply Co."
+currency_symbol = "$"
+
+[paths]
+inbox = "inbox"
+output = "output"
+outbox = "outbox"
+state = "state"
+
+[period]
+# "latest" reports the newest week in the inbox. Or pin a week start date: "2026-09-21".
+default = "latest"
+trailing_weeks = 4
+
+[channels]
+names = ["Paid Search", "Paid Social", "Email", "Organic"]
+paid = ["Paid Search", "Paid Social", "Email"]
+
+# Labels as they appear in the exports, mapped to the names above.
+[channels.aliases]
+"google ads" = "Paid Search"
+"meta ads" = "Paid Social"
+"newsletter" = "Email"
+
+# A KPI outside these limits is flagged on the report. It does not stop the run.
+[thresholds]
+refund_rate_max = 0.06
+paid_roas_min = 3.0
+first_response_minutes_max = 120
+sla_minutes = 240
+
+# The data-quality gate. A swing or gap at the fail level stops the run.
+[quality]
+row_swing_warn = 0.30
+row_swing_fail = 0.60
+row_swing_min_rows = 100
+date_gap_warn_days = 1
+date_gap_fail_days = 2
+outlier_multiple = 25
+# Set to true once the source system sends a control totals file every week.
+require_control_totals = false
+control_tolerance = 0.00
+
+[input]
+# How slash dates are read: "mdy" (09/21/2026) or "dmy" (21/09/2026). ISO dates always work.
+date_order = "mdy"
+# Keep a copy of every accepted input file under state/archive/.
+archive = true
+
+[alerts]
+# Optional heartbeat URL (Healthchecks.io and similar). Empty means no network call at all.
+heartbeat_url = ""
+
+# Dry run only: the message is saved to the outbox as an .eml file and never sent.
+[delivery]
+from = "reports@fernhollow.example"
+to = ["owner@fernhollow.example"]

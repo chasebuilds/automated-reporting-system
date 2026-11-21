@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+benchmark/_work/
+logs/
+~$*
+archive/
+run.lock
+*.tmp
+samples/outbox/no_report_*.eml

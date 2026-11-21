@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "automated-reporting-system"
+version = "0.1.0"
+description = "Turns a folder of weekly business exports into a formatted report, and refuses to publish on bad data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Chase Builds" }]
+dependencies = ["xlsxwriter>=3.2", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+autoreport = "autoreport.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/autoreport"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "benchmark"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# The inline stylesheet is kept compact; wrapping CSS at 100 columns helps nobody.
+"src/autoreport/render_html.py" = ["E501"]
