@@ -13,3 +13,4 @@ archive/
 run.lock
 *.tmp
 samples/outbox/no_report_*.eml
+_site/
