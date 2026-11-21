@@ -196,10 +196,10 @@ def _dates(table: Table, period: date, cfg: Config) -> list[Finding]:
             for row in table.rows
             if row[column] is not None and row["channel"] is not None
         }
-        gaps = [(d, c) for c in cfg.paid_channels for d in days if (d, c) not in seen_pairs]
-        if gaps:
-            listed = ", ".join(f"{c} {d.strftime('%a %Y-%m-%d')}" for d, c in gaps[:4])
-            more = f" and {len(gaps) - 4} more" if len(gaps) > 4 else ""
+        missing = [(d, c) for c in cfg.paid_channels for d in days if (d, c) not in seen_pairs]
+        if missing:
+            listed = ", ".join(f"{c} {d.strftime('%a %Y-%m-%d')}" for d, c in missing[:4])
+            more = f" and {len(missing) - 4} more" if len(missing) > 4 else ""
             out.append(
                 Finding(
                     WARN,

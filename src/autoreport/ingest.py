@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import re
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
@@ -187,7 +188,12 @@ def parse_int(text: str) -> int:
     return int(value)
 
 
-PARSERS = {"str": str, "date": parse_date, "money": parse_money, "int": parse_int}
+# Dates are parsed separately, because they need the configured day/month order.
+PARSERS: dict[str, Callable[[str], object]] = {
+    "str": str,
+    "money": parse_money,
+    "int": parse_int,
+}
 
 
 def read_table(kind: str, path: Path, date_order: str = "mdy") -> Table:

@@ -133,7 +133,7 @@ document.addEventListener('pointerleave',function(){t.style.opacity=0})})();
 
 def _nice_step(span: float, target: int = 4) -> float:
     raw = span / target if span > 0 else 1
-    magnitude = 10 ** math.floor(math.log10(raw))
+    magnitude: float = 10 ** math.floor(math.log10(raw))
     for multiple in (1, 2, 2.5, 5, 10):
         if raw <= multiple * magnitude:
             return multiple * magnitude

@@ -89,6 +89,8 @@ To run the tests and the benchmark:
 .venv\Scripts\python -m benchmark.run
 ```
 
+CI runs the same checks on Python 3.11 and 3.13: `ruff check .`, `mypy` (settings in `pyproject.toml`), and `pytest --cov`, with the coverage table on each run's summary page.
+
 For an install that is the same next year, use the pinned versions: `pip install -r requirements.lock` before `pip install -e . --no-deps`.
 
 ## How it works

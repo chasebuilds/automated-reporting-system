@@ -13,7 +13,7 @@ authors = [{ name = "Chase Builds" }]
 dependencies = ["xlsxwriter>=3.2", "openpyxl>=3.1"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6"]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.10", "types-openpyxl"]
 
 [project.scripts]
 autoreport = "autoreport.cli:main"
@@ -24,6 +24,28 @@ packages = ["src/autoreport"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src", "."]
+
+[tool.coverage.run]
+source = ["autoreport"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.mypy]
+files = ["src"]
+python_version = "3.11"
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = true
+no_implicit_reexport = true
+
+# xlsxwriter ships no type information.
+[[tool.mypy.overrides]]
+module = ["xlsxwriter", "xlsxwriter.*"]
+ignore_missing_imports = true
 
 [tool.ruff]
 line-length = 100
