@@ -75,6 +75,8 @@ To compare the tool with a report made by hand (one figure in the sample is plan
 
 Other commands: `autoreport check` runs the gate and writes nothing, `autoreport status` lists the weeks already processed, `autoreport run --all` works through every week in the inbox in date order (use it to backfill).
 
+To post the week's headline numbers to a chat channel, `autoreport webhook --kpis samples/output/2026-09-21/kpis_2026-09-21.json --style slack` (or `--style teams`) prints the message body for a Slack or Teams incoming webhook: the eight headline KPIs with the change from last week, any alerts, and an optional `--link` to the report. Like the email, it is not sent; hand the JSON to `curl` or your scheduler as a separate step.
+
 To run the tests and the benchmark:
 
 ```powershell

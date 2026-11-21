@@ -7,6 +7,7 @@ Exit codes: 0 done, 1 the gate refused the data (or `compare` found a difference
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from dataclasses import replace
 from pathlib import Path
@@ -17,6 +18,7 @@ from autoreport.config import Config, ConfigError, load_config
 from autoreport.ingest import parse_period, scan_inbox
 from autoreport.pipeline import NoInputError, resolve_period, run_period
 from autoreport.state import RunLockedError, State
+from autoreport.webhook import STYLES, load_kpis, report_payload
 
 EXIT_OK, EXIT_GATE, EXIT_USAGE = 0, 1, 2
 
@@ -46,6 +48,14 @@ def _parser() -> argparse.ArgumentParser:
     compare.add_argument("--config", default="report.toml")
     compare.add_argument("--period", required=True, help="week start date already processed")
     compare.add_argument("--manual", required=True, help="CSV with the columns metric,value")
+    hook = sub.add_parser(
+        "webhook", help="print a Slack or Teams message body for a published week (never sends)"
+    )
+    hook.add_argument("--kpis", required=True, help="the week's kpis_<week>.json from a run")
+    hook.add_argument("--style", choices=STYLES, default="slack")
+    hook.add_argument("--link", help="report URL to put on the message's button")
+    hook.add_argument("--currency", default="$", help="currency symbol (default: $)")
+    hook.add_argument("--out", help="write the JSON here instead of printing it")
     return parser
 
 
@@ -59,6 +69,8 @@ def _load(args: argparse.Namespace) -> Config:
 def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     try:
+        if args.command == "webhook":
+            return _webhook(args)
         cfg = _load(args)
         if args.command == "status":
             return _status(cfg)
@@ -133,6 +145,17 @@ def _compare(cfg: Config, period_text: str, manual: Path) -> int:
     if different:
         print("Explain each other line before retiring the manual report.")
     return EXIT_GATE if different else EXIT_OK
+
+
+def _webhook(args: argparse.Namespace) -> int:
+    payload = report_payload(load_kpis(Path(args.kpis)), args.style, args.link, args.currency)
+    text = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    if args.out:
+        Path(args.out).write_text(text, encoding="utf-8", newline="\n")
+        print(f"wrote {args.out}")
+    else:
+        sys.stdout.write(text)
+    return EXIT_OK
 
 
 if __name__ == "__main__":
