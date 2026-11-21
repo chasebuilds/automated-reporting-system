@@ -1,5 +1,7 @@
 # automated-reporting-system
 
+[![ci](https://github.com/chasebuilds/automated-reporting-system/actions/workflows/ci.yml/badge.svg)](https://github.com/chasebuilds/automated-reporting-system/actions/workflows/ci.yml) ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) [![MIT license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 One command turns a folder of raw weekly exports into a finished Excel report and an HTML dashboard, and refuses to publish anything if the data is bad.
 
 ![One week of raw export files and the KPI table built from them, plus the refusal message for a week with duplicated rows](docs/preview.png)
