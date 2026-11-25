@@ -169,3 +169,11 @@ All data in this repo is synthetic, made by a seeded generator. The company in t
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## More from Chase Builds
+
+- **[react-analytics-dashboard](https://github.com/chasebuilds/react-analytics-dashboard)**: Sales and operations dashboard with filters, charts and CSV export. ([live demo](https://chasebuilds.github.io/react-analytics-dashboard/))
+- **[data-quality-checks](https://github.com/chasebuilds/data-quality-checks)**: Catches bad data before it reaches a report. 1,784 of 1,800 planted faults caught, 0 false alarms. ([live demo](https://chasebuilds.github.io/data-quality-checks/))
+- **[housing-market-trends](https://github.com/chasebuilds/housing-market-trends)**: Monthly market metrics and a time-adjustment rate with a confidence band. ([live demo](https://chasebuilds.github.io/housing-market-trends/))
+
+[All projects, sorted by industry](https://github.com/chasebuilds) · [chasebuilds.github.io](https://chasebuilds.github.io)
