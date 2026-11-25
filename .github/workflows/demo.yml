@@ -30,6 +30,8 @@ jobs:
         run: python -m benchmark.build_samples
       - name: Assemble the site
         run: python -m benchmark.build_site --out _site
+      - name: Page title, description and share preview
+        run: python3 demo/page_meta.py _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

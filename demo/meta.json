@@ -1,0 +1,7 @@
+{
+  "title": "Automated Reporting System: Weekly exports to a checked Excel report | Chase Builds",
+  "description": "Turns raw weekly exports into a formatted Excel report and a dashboard, with a data-quality gate that stops bad runs. Sample report on invented data.",
+  "url": "https://chasebuilds.github.io/automated-reporting-system/",
+  "image": "docs/preview.png",
+  "repo": "automated-reporting-system"
+}
